@@ -1,0 +1,33 @@
+/* Write your CSS! */
+
+html {
+  height: 100%;
+}
+
+.main {
+  display: table;
+  height: 100vh;
+}
+
+h1 {
+  display: table-cell;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 10vw;
+  font-weight: 200;
+  line-height: 1em;
+  vertical-align: middle;
+  padding-left: 1vw;
+}
+
+.NSFW {
+   color: transparent;
+   font-weight: 800;
+   text-shadow: 0 0 .45em rgba(0,0,0,0.5);
+   @include transition (all 150ms ease-out);
+
+   &:hover {
+   	color: inherit;
+   	text-shadow: none;
+   	cursor: pointer;
+   }
+}
