@@ -1,5 +1,7 @@
 $(document).ready(function(){
   
-  // Write your Javascript!
+	$('.tweet-button').on('click', function() {
+		ga('send', 'event', 'tweet', 'click');
+	});
 
 });

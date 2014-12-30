@@ -4,10 +4,17 @@ html {
   height: 100%;
 }
 
+body {
+  background: #111;
+  color: #fff;
+  margin-left: 2vw;
+}
+
 .main {
   display: table;
-  height: 100vh;
+  height: 80vh;
 }
+
 
 h1 {
   display: table-cell;
@@ -16,13 +23,12 @@ h1 {
   font-weight: 200;
   line-height: 1em;
   vertical-align: middle;
-  padding-left: 1vw;
 }
 
 .NSFW {
    color: transparent;
    font-weight: 800;
-   text-shadow: 0 0 .45em rgba(0,0,0,0.5);
+   text-shadow: 0 0 .45em rgba(255,255,255,0.5);
    @include transition (all 150ms ease-out);
 
    &:hover {
@@ -30,4 +36,31 @@ h1 {
    	text-shadow: none;
    	cursor: pointer;
    }
+}
+
+
+.tweet {
+  height: 20vh;
+  a {
+    text-decoration: none;
+    color: #A9A9A9;
+    @include transition(color, 150ms, ease-out);
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.creds {
+  height: 5vh;
+  color: #333;
+
+  a {
+    color: #555;
+
+    &:hover, &:visited {
+      color: #333;
+    }
+  }
 }
