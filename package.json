@@ -1,0 +1,23 @@
+{
+  "name": "IOAFW",
+  "version": "0.0.0",
+  "description": "Its only a fucking website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://chrisobs13@github.com/chrisobs13/ioafw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisobs13/ioafw/issues"
+  },
+  "homepage": "https://github.com/chrisobs13/ioafw",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-gh-pages": "^0.4.0"
+  }
+}

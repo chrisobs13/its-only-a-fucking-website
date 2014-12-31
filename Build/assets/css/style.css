@@ -1,0 +1,49 @@
+html {
+  height: 100%; }
+
+body {
+  background: #111;
+  color: #fff;
+  margin-left: 2vw; }
+
+.main {
+  display: table;
+  height: 80vh; }
+
+h1 {
+  display: table-cell;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  line-height: 1em;
+  vertical-align: middle;
+  font-size: 10vw; }
+  h1 small {
+    display: block;
+    color: darkgrey; }
+
+#NSFW {
+  font-weight: 800 !important;
+  position: relative; }
+  .no-touch.textshadow #NSFW {
+    color: transparent;
+    text-shadow: 0 0 0.45em rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    transition: all 100ms ease-out; }
+    .no-touch.textshadow #NSFW:hover {
+      color: inherit;
+      text-shadow: none; }
+  .touch #NSFW.censored {
+    color: transparent;
+    text-shadow: 0 0 0.45em rgba(255, 255, 255, 0.5); }
+
+.tweet {
+  height: 20vh; }
+  .tweet a {
+    text-decoration: none;
+    color: darkgrey;
+    -webkit-transition: color, 150ms, ease-out;
+    -moz-transition: color, 150ms, ease-out;
+    transition: color, 150ms, ease-out; }
+    .tweet a:hover {
+      color: #fff; }

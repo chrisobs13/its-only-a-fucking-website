@@ -1,0 +1,51 @@
+/* Write your CSS! */
+html {
+  height: 100%; }
+
+body {
+  background: #111;
+  color: #fff;
+  margin-left: 2vw; }
+
+.main {
+  display: table;
+  height: 80vh; }
+
+h1 {
+  display: table-cell;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 10vw;
+  font-weight: 200;
+  line-height: 1em;
+  vertical-align: middle; }
+
+.NSFW {
+  color: transparent;
+  font-weight: 800;
+  text-shadow: 0 0 0.45em rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 150ms ease-out;
+  -moz-transition: all 150ms ease-out;
+  transition: all 150ms ease-out; }
+  .NSFW:hover {
+    color: inherit;
+    text-shadow: none;
+    cursor: pointer; }
+
+.tweet {
+  height: 20vh; }
+  .tweet a {
+    text-decoration: none;
+    color: #A9A9A9;
+    -webkit-transition: color, 150ms, ease-out;
+    -moz-transition: color, 150ms, ease-out;
+    transition: color, 150ms, ease-out; }
+    .tweet a:hover {
+      color: #fff; }
+
+.creds {
+  height: 5vh;
+  color: #333; }
+  .creds a {
+    color: #555; }
+    .creds a:hover, .creds a:visited {
+      color: #333; }
