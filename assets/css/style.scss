@@ -1,0 +1,67 @@
+@import 'variables';
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #111;
+  color: #fff;
+  margin-left: 2vw;
+}
+
+.main {
+  display: table;
+  height: 80vh;
+}
+
+h1 {
+  display: table-cell;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  line-height: 1em;
+  vertical-align: middle;
+  font-size: 10vw;
+
+  small {
+    display: block;
+    color: $secondary;
+  }
+}
+
+#NSFW {
+  font-weight: 800 !important;
+  position: relative;
+
+  .no-touch.textshadow & {
+    color: transparent;
+    text-shadow: 0 0 .45em rgba(255,255,255,0.5);
+    @include transition(all 100ms ease-out);
+
+    &:hover {
+      color: inherit;
+      text-shadow: none;
+    }
+  }
+
+  .touch & {
+
+    &.censored {
+      color: transparent;
+      text-shadow: 0 0 .45em rgba(255,255,255,0.5);
+    }
+  }
+}
+
+.tweet {
+  height: 20vh;
+  a {
+    text-decoration: none;
+    color: $secondary;
+    @include transition(color, 150ms, ease-out);
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
